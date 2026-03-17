@@ -1,0 +1,61 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.prev {
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+}
+
+@media (max-width: 1224px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slide {
+    padding: 10px;
+  }
+  .prev,
+  .next {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+}

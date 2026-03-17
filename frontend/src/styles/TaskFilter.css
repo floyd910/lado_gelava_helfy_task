@@ -1,0 +1,14 @@
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.filters button {
+  font-size: 18px;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+}

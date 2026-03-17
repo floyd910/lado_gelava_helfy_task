@@ -1,0 +1,78 @@
+.form {
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.task_form {
+  width: calc(35% - 50px / 2);
+  min-width: 300px;
+}
+
+.form input,
+.form textarea {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: black;
+  caret-color: black;
+  font-size: 18px;
+  width: 100%;
+}
+
+.submit_btn {
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.priority_btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.low {
+  background-color: rgb(4, 143, 64);
+}
+
+.high {
+  background-color: crimson;
+}
+
+.medium {
+  background-color: rgb(15, 181, 197);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.active {
+  border: 2px solid #333 !important;
+}
+
+.delete_btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media (max-width: 1024px) {
+  .task_form {
+    width: 100%;
+  }
+}

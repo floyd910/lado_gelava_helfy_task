@@ -1,0 +1,12 @@
+.task_list {
+  width: calc(65% - 50px / 2);
+  min-width: 300px;
+  margin-left: 100px;
+}
+
+@media (max-width: 1024px) {
+  .task_list {
+    width: 100%;
+    margin-left: 0;
+  }
+}
