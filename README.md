@@ -2,15 +2,20 @@
 
 # FRONTEND (240min)
 
-cd frontend
-npm i
-npm run dev (runs on port 5173)
+1)cd frontend
+
+2) npm i
+  
+3) npm run dev (runs on port 5173)
+
 
 # BACKEND (120min)
 
-cd backend
-npm i
-npm run dev (runs on port 4000)
+1) cd backend
+
+2) npm install
+
+3) npm run dev (runs on port 4000)
 
 # I decided to go with minimalist design. Also decided to set default priority to low to avoid extra validations.
 
