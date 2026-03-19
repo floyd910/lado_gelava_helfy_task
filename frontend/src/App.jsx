@@ -66,11 +66,14 @@ function App() {
     setIsModalOpen(false);
   };
 
-  const filteredTasks = tasks.filter((task) => {
-    if (filter === "pending") return !task.completed;
-    if (filter === "completed") return task.completed;
-    return true;
-  });
+  const filteredTasks =
+    tasks &&
+    Array.isArray(tasks) &&
+    tasks.filter((task) => {
+      if (filter === "pending") return !task.completed;
+      if (filter === "completed") return task.completed;
+      return true;
+    });
 
   return (
     <>
